@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Portfolio - Aditi Salgaonkar</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      color: #1a1919;
+      scroll-behavior: smooth;
+      background-color: #deddd6;
+    }
+
+    nav {
+      background: #151616;
+      color: white;
+      padding: 15px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    nav a {
+      color: #facc15;
+      margin: 0 10px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      color: #fff;
+    }
+
+    .hero {
+      background: #151616;
+      color: white;
+      padding: 150px 40px;
+      position: relative;
+      clip-path: polygon(0 0, 100% 0, 100% 80%, 0% 100%);
+      text-align: left;
+      overflow: hidden;
+    }
+
+    .hero-content {
+      max-width: 600px;
+      animation: fadeIn 1.2s ease-out;
+    }
+
+    .hero h1 {
+      font-size: 2.5rem;
+    }
+
+    .hero h1 span {
+      color: #f9de2a;
+    }
+
+    .hero p {
+      margin-top: 10px;
+      font-size: 1rem;
+      opacity: 0.8;
+    }
+
+    .hero-img {
+      position: absolute;
+      right: 40px;
+      top: 60px;
+      width: 280px;
+      height: 280px;
+      border-radius: 50%;
+      border: 5px solid #facc15;
+      background-color: #fff;
+      object-fit: cover;
+    }
+
+    section {
+      padding: 60px 20px;
+    }
+
+    #about h2,
+    #projects h2,
+    #resume h2,
+    #contact h2 {
+      font-size: 2rem;
+      margin-bottom: 20px;
+    }
+
+    
+    .filter-buttons {
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    .filter-buttons button {
+      background-color: #facc15;
+      border: none;
+      padding: 10px 20px;
+      margin: 5px;
+      font-weight: bold;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+
+    .filter-buttons button.active,
+    .filter-buttons button:hover {
+      background-color: #0b0b0b;
+      color: white;
+    }
+
+    .projects-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+    }
+
+    .project-card {
+      background: #fffffdff;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease;
+    }
+
+    .project-card:hover {
+      transform: scale(1.03);
+    }
+
+    .project-card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+
+    .project-card .content {
+      padding: 15px;
+    }
+
+    .project-card .content h3 {
+      margin: 0;
+      font-size: 1.2rem;
+    }
+
+    .project-card .content p {
+      font-size: 0.9rem;
+      margin: 10px 0;
+    }
+
+    .project-card .content a {
+      color: #facc15;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .footer {
+      background: #1a1919;
+      color: white;
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    .footer a {
+      color: #facc15;
+      margin: 0 10px;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(-20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @media (max-width: 600px) {
+      .hero-img {
+        position: static;
+        display: block;
+        margin: 30px auto 0;
+      }
+      .hero {
+        clip-path: none;
+        text-align: center;
+      }
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <div><strong>Aditi Salgaonkar</strong></div>
+    <div>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#resume">Resume</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </nav>
+
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Hello, I'm <span>Aditi Salgaonkar</span></h1>
+      <p>I’m a passionate Web Developer crafting clean and user-focused websites.</p>
+    </div>
+    <img src="girl.jpg" alt="Aditi's Photo" class="hero-img">
+  </section>
+
+  <section id="about">
+  <h2>About Me</h2>
+  <p>
+    Hello! I’m <strong>Aditi Salgaonkar</strong>, a passionate and creative <strong>Web Developer</strong> from Goa, India. I specialize in building modern, responsive, and user-friendly websites. My focus is on crafting seamless digital experiences using HTML, CSS, JavaScript, and frameworks like React.
+  </p>
+  <p>
+    I enjoy solving real-world problems through clean and efficient code. Whether it's developing interactive games or creating support systems for important causes like Alzheimer’s care, I believe technology can make a difference.
+  </p>
+  <p>
+    Outside of coding, I enjoy exploring UI/UX design, learning new development trends, and contributing to open-source projects. My goal is to build solutions that are not only functional but also beautiful and accessible to all.
+  </p>
+  <p>
+    I'm always excited to collaborate on meaningful projects and expand my skills through continuous learning and hands-on experience.
+  </p>
+</section>
+
+
+  <section id="projects">
+    <h2>My Projects</h2>
+    <div class="filter-buttons">
+      <button class="active" onclick="filterProjects('all')">All</button>
+      <button onclick="filterProjects('web')">Web</button>
+      <button onclick="filterProjects('game')">Games</button>
+    </div>
+
+    <div class="projects-grid" id="projectCards">
+      <div class="project-card" data-category="web">
+        <div class="content">
+          <h3>Portfolio Website</h3>
+          <p>A personal responsive portfolio to showcase my projects and contact info.</p>
+          <a href="#">View</a>
+        </div>
+      </div>
+
+      <div class="project-card" data-category="web">
+        <div class="content">
+          <h3>Alzheimer Caregiver Support</h3>
+          <p>Helps caregivers manage Alzheimer's patients using reminders, logs, and support features.</p>
+          <a href="C:\Users\salga\OneDrive\Desktop\community website\login.html">View</a>
+        </div>
+      </div>
+
+      <div class="project-card" data-category="game">
+        <div class="content">
+          <h3>3D Breakout Game</h3>
+          <p>Breakout game using Panda3D and Python, with sound effects and 3 levels.</p>
+          <a href="C:\Users\salga\OneDrive\Desktop\game programming\breakout_game_final.py">Play</a>
+        </div>
+      </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="resume">
+    <h2>My Resume</h2>
+    <p>Download my resume: <a href="resume.pdf" download>Click here to download</a></p>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p><strong>Email:</strong> aditi.salgaonkar.dev@gmail.com</p>
+    <p><strong>Phone:</strong> +91 98765 43210</p>
+    <p><strong>Location:</strong> Goa, India</p>
+    <div>
+      <a href="https://www.linkedin.com/in/aditi-salgaonkar" target="_blank">LinkedIn</a>
+      <a href="https://github.com/aditi-salgaonkar" target="_blank">GitHub</a>
+    </div>
+  </section>
+
+  <div class="footer">
+    &copy; 2025 Aditi Salgaonkar. All rights reserved.
+  </div>
+
+  <script>
+    function filterProjects(category) {
+      const buttons = document.querySelectorAll('.filter-buttons button');
+      buttons.forEach(btn => btn.classList.remove('active'));
+
+      const activeBtn = [...buttons].find(btn => btn.textContent.toLowerCase() === category);
+      if (activeBtn) activeBtn.classList.add('active');
+
+      const cards = document.querySelectorAll('.project-card');
+      cards.forEach(card => {
+        card.style.display = (category === 'all' || card.dataset.category === category) ? 'block' : 'none';
+      });
+    }
+  </script>
+</body>
+</html>
